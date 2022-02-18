@@ -25,11 +25,11 @@
 
 html {
   scroll-behavior: smooth;
-  overflow-x: hidden;
 }
 
 body {
   background-color: var(--background);
+  overflow-x: hidden !important;
 }
 
 li {
@@ -273,9 +273,8 @@ li {
 .contact__description {
   position: absolute;
   margin-top: 144rem;
-  margin-left: 2rem;
-  margin-right: 1rem;
   line-height: 2rem;
+  margin-left: 2rem;
   font-family: var(--font-base);
   color: var(--primary-color);
 }
