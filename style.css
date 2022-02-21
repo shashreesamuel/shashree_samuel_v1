@@ -266,6 +266,16 @@ body {
   transition: 0.2s ease-in-out;
 }
 
+.work_card__link{
+  color: #ccd7f7;
+  text-decoration: none;
+}
+
+.work_card__link:hover{
+  color: #4cd8b6;
+  transition: 0.2s ease-in-out;
+}
+
 .work_card__description {
   margin-left: 1rem;
   font-family: var(--font-sans);
@@ -312,7 +322,7 @@ body {
 
 .contact__button {
   position: absolute;
-  margin-left: 9rem;
+  margin-left: 2rem;
   margin-top: 18rem;
   text-decoration: none;
   font-family: var(--font-mono);
@@ -340,8 +350,8 @@ body {
 
 .social-icons {
   position: absolute;
-  margin-left: 6rem;
-  margin-top: 25rem;
+  margin-left: 2rem;
+  margin-top: 26rem;
   margin-bottom: 2rem;
   justify-content: center;
   align-items: center;
@@ -371,7 +381,7 @@ body {
   font-family: var(--font-mono);
   margin-top: 30rem;
   position: absolute;
-  margin-left: 5rem;
+  margin-left: 2rem;
   text-align: center;
   color: #ccd7f7;
   font-weight: 400;
@@ -533,6 +543,7 @@ body {
   .footer-copyright {
     display: inline-block;
     vertical-align: middle;
+    margin-left: 5rem;
   }
 
   .subtitle {
@@ -566,4 +577,10 @@ body {
     display: block;
     margin-bottom: 20px;
   }
+}
+
+/* Light Theme */
+
+.light-mode{
+  background-color: #F9FBFF;
 }
