@@ -21,6 +21,10 @@ body {
 
 /* Header Section */
 
+.header{
+  animation: introLoad 2s ease-in-out;
+}
+
 .header__logo {
   margin-top: 1.6rem;
   margin-left: 2rem;
@@ -95,6 +99,9 @@ body {
 
 /* Hero Section */
 
+.hero{
+  animation: left_slide 2s ease-in-out;
+}
 .small-title {
   color: #4cd8b6;
   margin-top: 8rem;
@@ -135,6 +142,9 @@ body {
 
 /* About Section */
 
+.about{
+  animation: top_slide 2s ease-in-out;
+}
 .about__title {
   color: #ccd6f6;
   margin-top: 8rem;
@@ -195,6 +205,9 @@ body {
 
 /* Things I made */
 
+.work{
+  animation: zoom_in 2s ease-in-out;
+}
 .work__title {
   color: #ccd6f6;
   margin-left: 2rem;
@@ -274,6 +287,9 @@ body {
 
 /* Contact Section */
 
+.contact{
+  animation: fade_in 2s ease-in-out;
+}
 .contact__title {
   color: #ccd6f6;
   position: absolute;
@@ -378,6 +394,42 @@ body {
   }
   to {
     clip-path: inset(0 0 0 0);
+  }
+}
+
+@keyframes left_slide{
+  from{
+    clip-path: inset(0 100% 0 0);
+  }
+  to{
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+@keyframes top_slide{
+  from{
+    clip-path: inset(0 0 100% 0);
+  }
+  to{
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+@keyframes zoom_in{
+  from{
+    clip-path: circle(3.7% at 0 51%);
+  }
+  to{
+    clip-path: circle(99.9% at 0 52%);
+  }
+}
+
+@keyframes fade_in {
+  from{
+    clip-path: polygon(20% 0%, 80% 0%, 20% 0, 0% 100%);
+  }
+  to{
+    clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
   }
 }
 
