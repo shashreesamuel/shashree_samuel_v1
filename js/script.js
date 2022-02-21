@@ -1,7 +1,12 @@
-let button = document.querySelector('.hamburger-menu');
-let menu = document.querySelector('.navbar__navlinks')
+let menu = document.querySelector('.navbar__navlinks');
+let button = document.querySelector('.menu');
+let closebtn = document.querySelector('.close-btn');
 
 button.addEventListener("click", () => {
-    menu.classList.add("hover-underline-animation")
-    menu.classList.toggle('open-nav');
+    menu.classList.add("open-nav");
+})
+
+
+closebtn.addEventListener("click", () => {
+    menu.classList.remove("open-nav");
 })
