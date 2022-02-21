@@ -276,6 +276,10 @@ body {
   transition: 0.2s ease-in-out;
 }
 
+.work_card__link:visited{
+  color: #ccd7f7;
+}
+
 .work_card__description {
   margin-left: 1rem;
   font-family: var(--font-sans);
