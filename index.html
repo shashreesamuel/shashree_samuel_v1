@@ -4,13 +4,18 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link rel="stylesheet" href="./css/style.css" />
-    <meta name="author" content="Shashree Samuel">
-    <meta name="keywords" content="personal-portfolio, personal_portfolio, website-development, website_development, shashree-samuel, shashreesamuel, html, css, js, HTML, CSS, JS">
-    <meta name="description" content="A personal portfolio website to gain insight on who I am, the creations that I have made thus far and just everything that makes me unique">
+    <meta name="author" content="Shashree Samuel" />
+    <meta
+      name="keywords"
+      content="personal-portfolio, personal_portfolio, website-development, website_development, shashree-samuel, shashreesamuel, html, css, js, HTML, CSS, JS"
+    />
+    <meta
+      name="description"
+      content="A personal portfolio website to gain insight on who I am, the creations that I have made thus far and just everything that makes me unique"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="shortcut icon" href="favicon.png" type="image/png">
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&family=Roboto+Mono:wght@400;500&display=swap"
       rel="stylesheet"
@@ -18,44 +23,10 @@
     <title>Shashree Samuel</title>
   </head>
   <body>
-    <header class="header" id="home">
-      <h1 class="header__logo">Shashree Samuel</h1>
-      <svg
-        class="menu"
-        viewBox="0 0 30 24"
-        fill="none"
-        onclick="dropIt();"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <line
-          x1="16.5"
-          y1="22.5"
-          x2="1.5"
-          y2="22.5"
-          stroke="#4CD8B6"
-          stroke-width="3"
-          stroke-linecap="round"
-        />
-        <line
-          x1="23.5"
-          y1="12.5"
-          x2="1.5"
-          y2="12.5"
-          stroke="#4CD8B6"
-          stroke-width="3"
-          stroke-linecap="round"
-        />
-        <line
-          x1="28.5"
-          y1="1.5"
-          x2="1.5"
-          y2="1.5"
-          stroke="#4CD8B6"
-          stroke-width="3"
-          stroke-linecap="round"
-        />
-      </svg>
-
+    <nav class="header" id="home">
+        <div>
+          <h1 class="header__logo">Shashree Samuel</h1>
+        </div>
       <ul class="navbar__navlinks">
         <li class="navlinks__navitem">
           <a class="navlinks__navlink" href="#home">Home</a>
@@ -69,31 +40,13 @@
         <li class="navlinks__navitem">
           <a class="navlinks__navlink" href="#contact">Contact</a>
         </li>
-        <svg
-          class="close-btn"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M18 6L6 18"
-            stroke="white"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          />
-          <path
-            d="M6 6L18 18"
-            stroke="white"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          />
-        </svg>
       </ul>
-    </header>
+      <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </nav>
     <section class="hero">
       <h1 class="small-title">Hi, my name is</h1>
       <h2 class="large-title">Shashree Samuel</h2>
@@ -168,71 +121,7 @@
     </section>
     <section class="work" id="work">
       <h1 class="work__title">Things I made</h1>
-      <div class="row">
-        <div class="column">
-          <div class="work_card">
-            <svg
-              width="35"
-              height="35"
-              class="file-icon"
-              viewBox="0 0 45 45"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M41.25 35.625C41.25 36.6196 40.8549 37.5734 40.1516 38.2766C39.4484 38.9799 38.4946 39.375 37.5 39.375H7.5C6.50544 39.375 5.55161 38.9799 4.84835 38.2766C4.14509 37.5734 3.75 36.6196 3.75 35.625V9.375C3.75 8.38044 4.14509 7.42661 4.84835 6.72335C5.55161 6.02009 6.50544 5.625 7.5 5.625H16.875L20.625 11.25H37.5C38.4946 11.25 39.4484 11.6451 40.1516 12.3483C40.8549 13.0516 41.25 14.0054 41.25 15V35.625Z"
-                stroke="#4CD8B6"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-
-            <h3 class="work_card__title"><a class="work_card__link" href="https://simplequotes.netlify.app">Random Quote Generator</a></h3>
-            <p class="work_card__description">
-              A random quote generator designed to empower and inspire you with
-              famous quotes from intelligent and well known scholars. Anyday,
-              Anytime
-            </p>
-            <div class="work_card__programs">
-              <p>React</p>
-              <p>HTML</p>
-              <p>CSS</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="column">
-          <div class="work_card">
-            <svg
-              width="35"
-              height="35"
-              class="file-icon"
-              viewBox="0 0 45 45"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M41.25 35.625C41.25 36.6196 40.8549 37.5734 40.1516 38.2766C39.4484 38.9799 38.4946 39.375 37.5 39.375H7.5C6.50544 39.375 5.55161 38.9799 4.84835 38.2766C4.14509 37.5734 3.75 36.6196 3.75 35.625V9.375C3.75 8.38044 4.14509 7.42661 4.84835 6.72335C5.55161 6.02009 6.50544 5.625 7.5 5.625H16.875L20.625 11.25H37.5C38.4946 11.25 39.4484 11.6451 40.1516 12.3483C40.8549 13.0516 41.25 14.0054 41.25 15V35.625Z"
-                stroke="#4CD8B6"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-            <h3 class="work_card__title"><a class="work_card__link" href="https://simplecolorgenerator.netlify.app"> Color Generator</a></h3>
-            <p class="work_card__description">
-              Building a online generator that features filter, opacity and linear-gradient
-              to help you envision the color scheme for your next design using color codes.
-            </p>
-            <div class="work_card__programs">
-              <p>React</p>
-              <p>HTML</p>
-              <p>CSS</p>
-            </div>
-          </div>
-        </div>
-      </div>
+      <div class="work__card"></div>
     </section>
     <section class="contact" id="contact">
       <h1 class="contact__title">Get in Touch</h1>
