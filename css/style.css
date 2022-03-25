@@ -207,15 +207,19 @@ nav {
   margin-top: 3rem;
   margin-left: 2rem;
   background-color: #496088;
-  width: 390px;
+  /* width: 390px; */
+  width: 413px;
   position: relative;
   border-radius: 0.3rem;
-  height: 320px;
+  height: max-content;
+  gap: 1rem;
+  /* height: 320px; */
 }
 
 .work_card__grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  place-items: center;
 }
 
 .work_card__title {
@@ -260,7 +264,6 @@ nav {
 .work__title,
 .contact__title {
   text-align: center;
-  margin-right: 27rem;
 }
 
 .work_card__programs {
@@ -281,12 +284,12 @@ nav {
   font-weight: 800;
   font-family: var(--font-sans);
   font-size: 1.6rem;
-  margin-top: 5rem;
-  margin-left: 12rem;
+  margin-top: 7rem;
+  margin-left: 1rem;
 }
 
 .contact__description {
-  margin-left: 1rem;
+  /* margin-left: 27rem; */
   margin-top: 2rem;
   font-family: var(--font-sans);
   color: var(--color-paragraph);
@@ -299,7 +302,7 @@ nav {
 
 .contact__button {
   position: absolute;
-  margin-left: 44rem;
+  margin-left: 27rem;
   margin-top: 12rem;
   text-decoration: none;
   font-size: 1.1rem;
@@ -324,7 +327,7 @@ nav {
 
 .social-icons {
   position: absolute;
-  margin-left: 42rem;
+  margin-left: 25rem;
   margin-top: 25rem;
   margin-bottom: 2rem;
   justify-content: center;
@@ -369,7 +372,7 @@ nav {
   font-family: var(--font-mono);
   margin-top: 30rem;
   position: absolute;
-  margin-left: 41rem;
+  margin-left: 24rem;
   text-align: center;
   color: var(--color-primary);
   font-weight: 400;
@@ -425,6 +428,19 @@ nav {
   .about {
     margin-left: 0;
   }
+
+  .work__title {
+    margin-left: 0;
+  }
+
+  .contact__title {
+    margin-left: 0;
+  }
+
+  .contact__description {
+    margin-left: 2rem;
+    text-align: left;
+  }
 }
 @media screen and (max-width: 768px) {
   body {
@@ -469,7 +485,7 @@ nav {
     font-size: 1.6rem;
   }
 
-  .work__title{
+  .work__title {
     margin-left: 12rem;
   }
 }
@@ -514,14 +530,19 @@ nav {
     font-size: 1.1rem;
   }
 
-  .contact__description{
+  .contact__description {
     font-size: 1.1rem;
   }
-  .work__title, .contact__title{
+  .work__title,
+  .contact__title {
     white-space: nowrap;
   }
 
-  .contact__title{
+  .contact__title {
+    margin-left: 2rem;
+  }
+
+  .work__title {
     margin-left: 2rem;
   }
 }
