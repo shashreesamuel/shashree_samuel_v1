@@ -289,7 +289,7 @@ nav {
 }
 
 .contact__description {
-  /* margin-left: 27rem; */
+  margin-left: 27rem;
   margin-top: 2rem;
   font-family: var(--font-sans);
   color: var(--color-paragraph);
@@ -302,7 +302,7 @@ nav {
 
 .contact__button {
   position: absolute;
-  margin-left: 27rem;
+  margin-left: 56rem;
   margin-top: 12rem;
   text-decoration: none;
   font-size: 1.1rem;
@@ -327,7 +327,7 @@ nav {
 
 .social-icons {
   position: absolute;
-  margin-left: 25rem;
+  margin-left: 54rem;
   margin-top: 25rem;
   margin-bottom: 2rem;
   justify-content: center;
@@ -372,10 +372,10 @@ nav {
   font-family: var(--font-mono);
   margin-top: 30rem;
   position: absolute;
-  margin-left: 24rem;
+  margin-left: 54rem;
   text-align: center;
   color: var(--color-primary);
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .footer-email {
@@ -415,6 +415,7 @@ nav {
 
   .footer-copyright {
     margin-left: 24rem;
+    font-weight: 500;
   }
 
   .hero {
@@ -440,6 +441,18 @@ nav {
   .contact__description {
     margin-left: 2rem;
     text-align: left;
+  }
+
+  .contact__button{
+    margin-left: 25rem;
+  }
+  
+  .social-icons{
+    margin-left: 23rem;
+  }
+
+  .footer-copyright{
+    margin-left: 23rem;
   }
 }
 @media screen and (max-width: 768px) {
@@ -510,7 +523,7 @@ nav {
     margin-left: 12rem;
   }
   .footer-copyright {
-    margin-left: 7rem;
+    margin-left: 8rem;
   }
 
   .contact__button {
