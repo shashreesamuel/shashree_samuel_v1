@@ -266,6 +266,7 @@ nav {
   text-align: center;
 }
 
+
 .work_card__programs {
   position: relative;
   font-family: var(--font-mono);
@@ -302,7 +303,7 @@ nav {
 
 .contact__button {
   position: absolute;
-  margin-left: 56rem;
+  margin-left: 29rem;
   margin-top: 12rem;
   text-decoration: none;
   font-size: 1.1rem;
@@ -327,7 +328,7 @@ nav {
 
 .social-icons {
   position: absolute;
-  margin-left: 54rem;
+  margin-left: 27rem;
   margin-top: 25rem;
   margin-bottom: 2rem;
   justify-content: center;
@@ -372,7 +373,7 @@ nav {
   font-family: var(--font-mono);
   margin-top: 30rem;
   position: absolute;
-  margin-left: 54rem;
+  margin-left: 27rem;
   text-align: center;
   color: var(--color-primary);
   font-weight: 500;
@@ -533,6 +534,7 @@ nav {
   .contact__description {
     margin-left: 2rem;
     text-align: left;
+    font-size: 1.1rem;
   }
 
   .social-icons {
@@ -543,9 +545,6 @@ nav {
     font-size: 1.1rem;
   }
 
-  .contact__description {
-    font-size: 1.1rem;
-  }
   .work__title,
   .contact__title {
     white-space: nowrap;
