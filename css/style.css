@@ -505,6 +505,11 @@ nav {
 }
 
 @media screen and (max-width: 600px) {
+
+  body{
+    overflow-x: hidden;
+  }
+  
   .work_card__grid {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
