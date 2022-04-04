@@ -216,6 +216,10 @@ nav {
   /* height: 320px; */
 }
 
+.work_card__button{
+  cursor: pointer;
+}
+
 .work_card__grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);

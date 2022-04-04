@@ -1,4 +1,4 @@
 ### Upcoming fixes
 
-- [ ] Add a clickable to the work cards
+- [ ] Make one of the icons on the card clickable to allow for redirection to the project.
 
