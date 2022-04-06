@@ -18,15 +18,14 @@ const navSlide = () => {
     // Burger Animation
     burger.classList.toggle("toggle");
   });
-
 };
 
 navSlide();
 
-// Sticky header
-
 // When the user scrolls the page, execute myFunction
-window.onscroll = function() {myFunction()};
+window.onscroll = function () {
+  myFunction();
+};
 
 // Get the header
 var header = document.getElementById("home");

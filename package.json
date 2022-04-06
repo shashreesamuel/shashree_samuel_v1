@@ -1,0 +1,21 @@
+{
+  "name": "shashree_samuel_2022",
+  "version": "1.0.0",
+  "description": "- [x] Make one of the icons on the card clickable to allow for redirection to the project.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheCoderGuru/shashree_samuel_2022.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TheCoderGuru/shashree_samuel_2022/issues"
+  },
+  "homepage": "https://github.com/TheCoderGuru/shashree_samuel_2022#readme"
+}

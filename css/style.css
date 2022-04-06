@@ -241,6 +241,9 @@ nav {
   position: absolute;
 }
 
+.work_card__link svg path:hover{
+  stroke: var(--color-primary);
+}
 .work_card__title:hover {
   color: var(--color-primary);
   transition: 0.2s ease-in-out;
@@ -340,6 +343,7 @@ nav {
   text-decoration: none;
 }
 
+
 .social-icons--github {
   text-decoration: none;
 }
@@ -382,6 +386,17 @@ nav {
   right: 0;
 }
 
+/* Browser Scrollbar Styling */
+
+::-webkit-scrollbar{
+  width: .5rem;
+  border-radius: .5rem;
+  background-color: lavenderblush;
+}
+::-webkit-scrollbar-thumb{
+  background-color: rgb(173, 173, 239);
+  border-radius: .5rem;
+}
 /* Sticky functionality */
 .sticky {
   position: fixed;
