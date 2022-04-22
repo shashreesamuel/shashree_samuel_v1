@@ -41,3 +41,9 @@ function myFunction() {
     header.classList.remove("sticky");
   }
 }
+
+const toggle = document.querySelector('.dark-toggle');
+
+toggle.addEventListener('click', () => {
+  document.classList.toggle('dark-mode');
+})
