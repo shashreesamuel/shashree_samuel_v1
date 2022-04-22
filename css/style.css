@@ -13,10 +13,15 @@
   --color-paragraph: #636a81;
 }
 
-.dark-mode {
+.darkMode {
   --bg: #0a192f;
   --card-bg: #3457c7;
-  --secondary: #a7afc7;
+  --color-secondary: #a7afc7;
+}
+
+button{
+  background: none;
+  border: none;
 }
 *,
 *::before,
@@ -646,8 +651,8 @@ ion-icon {
   .about__description--sub,
   .contact__description,
   .social-icons p {
-    --secondary: #a7afc7;
-    color: var(--secondary);
+    --color-secondary: #a7afc7;
+    color: var(--color-secondary);
   }
 
   .sticky {
