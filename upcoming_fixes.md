@@ -1,6 +1,7 @@
-## In progress fixes
+## Upcoming fixes
 
-[ ] Check it on smaller mobiles. I'm getting overflow on iphone 12 mini (pretty standard size for lots of phones).
+[ ] Add in the relevant description for each challenge
 
-[ ] I noticed an issue where there's a horizontal scroll bar on mobile view.
+[ ] Try to center the elements within the footer component.
 
+[ ] Add a cool hover animation for the navigation links when hovered
