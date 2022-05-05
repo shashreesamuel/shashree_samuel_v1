@@ -20,6 +20,9 @@ const navSlide = () => {
   });
 };
 
+navLinks.forEach(( link ) => {
+  link
+})
 navSlide();
 
 // When the user scrolls the page, execute myFunction
