@@ -81,6 +81,10 @@ nav {
   font-weight: 500;
 }
 
+.active{
+  border-bottom: 1px solid var(--color-primary);
+}
+
 .burger {
   display: none;
   cursor: pointer;

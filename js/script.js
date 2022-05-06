@@ -22,6 +22,18 @@ const navSlide = () => {
 
 navSlide();
 
+
+//! Active Link Onclick
+
+navLinks.forEach((link, idx) => {
+  link.addEventListener("click", () => {
+    removeActiveClasse();
+
+    link[idx].classList.toggle("active");
+  });
+});
+
+
 // When the user scrolls the page, execute myFunction
 
 window.onscroll = function () {
