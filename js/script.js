@@ -1,3 +1,5 @@
+
+
 const navSlide = () => {
   const burger = document.querySelector(".burger");
   const nav = document.querySelector(".navbar__navlinks");
@@ -18,24 +20,25 @@ const navSlide = () => {
     // Burger Animation
     burger.classList.toggle("toggle");
   });
+
+  navLinks.forEach((link, idx) => {
+    link.addEventListener("click", () => {
+      removeActiveClass();
+
+      link.classList.add("active");
+    });
+  });
+
+  function removeActiveClass() {
+    navLinks.forEach((l) => {
+      l.classList.remove("active");
+    });
+  }
 };
 
-navLinks.forEach(( link ) => {
-  link
-})
 navSlide();
 
-
 //! Active Link Onclick
-
-navLinks.forEach((link, idx) => {
-  link.addEventListener("click", () => {
-    removeActiveClasse();
-
-    link[idx].classList.toggle("active");
-  });
-});
-
 
 // When the user scrolls the page, execute myFunction
 
@@ -61,45 +64,51 @@ function myFunction() {
   }
 }
 
-
-
 // Dark Mode
 
 // check for saved 'darkMode' in localStorage
-let darkMode = localStorage.getItem('darkMode'); 
+let darkMode = localStorage.getItem("darkMode");
 
-const darkModeToggle = document.querySelector('#dark-mode-toggle');
+const darkModeToggle = document.querySelector("#dark-mode-toggle");
 
 const enableDarkMode = () => {
   // 1. Add the class to the body
-  document.body.classList.add('darkMode');
+  document.body.classList.add("darkMode");
   // 2. Update darkMode in localStorage
-  localStorage.setItem('darkMode', 'enabled');
-}
+  localStorage.setItem("darkMode", "enabled");
+};
 
 const disableDarkMode = () => {
   // 1. Remove the class from the body
-  document.body.classList.remove('darkMode');
-  // 2. Update darkMode in localStorage 
-  localStorage.setItem('darkMode', null);
-}
- 
+  document.body.classList.remove("darkMode");
+  // 2. Update darkMode in localStorage
+  localStorage.setItem("darkMode", null);
+};
+
 // If the user already visited and enabled darkMode
 // start things off with it on
-if (darkMode === 'enabled') {
+if (darkMode === "enabled") {
   enableDarkMode();
 }
 
 // When someone clicks the button
-darkModeToggle.addEventListener('click', () => {
+darkModeToggle.addEventListener("click", () => {
   // get their darkMode setting
-  darkMode = localStorage.getItem('darkMode'); 
-  
+  darkMode = localStorage.getItem("darkMode");
+
   // if it not current enabled, enable it
-  if (darkMode !== 'enabled') {
+  if (darkMode !== "enabled") {
     enableDarkMode();
-  // if it has been enabled, turn it off  
-  } else {  
-    disableDarkMode(); 
+    // if it has been enabled, turn it off
+  } else {
+    disableDarkMode();
   }
 });
+
+const Test = () => {
+  data.map(({ title }) => {
+    return `${title}`
+  });
+};
+
+document.getElementById("demo").innerHTML = Test();
