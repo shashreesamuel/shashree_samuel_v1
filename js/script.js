@@ -21,7 +21,7 @@ const navSlide = () => {
     burger.classList.toggle("toggle");
   });
 
-  navLinks.forEach((link, idx) => {
+  navLinks.forEach((link, index) => {
     link.addEventListener("click", () => {
       removeActiveClass();
 
