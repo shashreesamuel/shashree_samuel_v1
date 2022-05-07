@@ -219,7 +219,6 @@ ion-icon {
 
 .work__title {
   color: var(--color-primary);
-  margin-left: 3.5rem;
   margin-top: 8rem;
   font-family: var(--font-sans);
   font-size: 1.6rem;
@@ -276,11 +275,6 @@ ion-icon {
   stroke: var(--color-primary);
 }
 
-/* .work_card__title:hover {
-  color: var(--color-primary);
-  transition: 0.2s ease-in-out;
-} */
-
 .hero {
   margin-left: 2rem;
 }
@@ -309,37 +303,47 @@ ion-icon {
 
 /* Contact Section */
 
+.contact{
+  text-align: center;
+}
+
+.centered{
+  display: grid;
+  place-items: center;
+}
+
 .contact__title {
   color: var(--color-primary);
   font-weight: 800;
   font-family: var(--font-sans);
   font-size: 1.6rem;
-  margin-top: 7rem;
-  margin-left: 3rem;
+  text-align: center;
+  /* margin-top: 7rem;
+  margin-left: 3rem; */
 }
 
 .contact__description {
   margin-top: 2rem;
   font-family: var(--font-sans);
   color: var(--color-paragraph);
-  position: absolute;
   font-size: 1.2rem;
   margin-left: 3rem;
   margin-right: 2rem;
+  margin-bottom: 3em;
   line-height: 2rem;
 }
 
 .contact__button {
-  position: absolute;
   margin-top: 12rem;
   text-align: center;
+  margin-left: 2em;
   text-decoration: none;
+  top: 0;
   font-size: 1.1rem;
   font-family: var(--font-mono);
   color: var(--color-primary);
   border: 2px solid var(--color-primary);
   padding: 16px;
-  margin-left: 3rem;
   border-radius: 0.2rem;
 }
 
@@ -559,9 +563,6 @@ ion-icon {
     font-size: 1.4rem;
   }
 
-  .work__title {
-    margin-left: 12rem;
-  }
 }
 
 @media screen and (max-width: 600px) {
@@ -571,21 +572,17 @@ ion-icon {
     margin-left: 0;
   }
 
-  .work__title,
+  /* .work__title,
   .contact__title {
     text-align: left;
-  }
+  } */
 
-  .social-icons {
+  /* .social-icons {
     margin-left: 9rem;
   }
 
   .footer-copyright {
     margin-left: 6rem;
-  }
-
-  .contact__button {
-    margin-left: 8rem;
   }
 
   .contact__description {
@@ -605,9 +602,9 @@ ion-icon {
   .work__title,
   .contact__title {
     white-space: nowrap;
-  }
+  } */
 
-  .contact__title {
+  /* .contact__title {
     margin-left: 2rem;
   }
 
@@ -617,7 +614,7 @@ ion-icon {
 
   .header {
     margin-left: 0;
-  }
+  } */
 }
 .nav-active {
   transform: translateX(0%);
