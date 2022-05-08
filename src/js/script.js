@@ -105,10 +105,3 @@ darkModeToggle.addEventListener("click", () => {
   }
 });
 
-const Test = () => {
-  data.map(({ title }) => {
-    return `${title}`
-  });
-};
-
-document.getElementById("demo").innerHTML = Test();
