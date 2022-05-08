@@ -116,30 +116,29 @@ body {
 
 /* About Section */
 .about__title {
-  color: var(--color-primary);
+  color: #7493f8;
   margin-top: 8rem;
   margin-left: 2rem;
-  font-family: var(--font-sans);
+  font-family: "Open Sans", sans-serif;
   font-size: 1.6rem;
   font-weight: 800;
+  text-align: center;
 }
-
 .about__description {
-  color: var(--color-paragraph);
+  color: #636a81;
   font-size: 1.2rem;
   margin-top: 2rem;
   margin-left: 2rem;
   line-height: 2rem;
-  font-family: var(--font-sans);
+  font-family: "Open Sans", sans-serif;
   margin-right: 1rem;
 }
-
-.about__description--sub {
+.about__subdescription {
   margin-top: 2rem;
   margin-left: 2rem;
   font-size: 1.1rem;
-  font-family: var(--font-sans);
-  color: var(--color-paragraph);
+  font-family: "Open Sans", sans-serif;
+  color: #636a81;
   margin-bottom: 2rem;
 }
 
@@ -158,37 +157,30 @@ body {
   width: 100%;
   height: 100%;
 }
-
 .card__title {
   display: inline-block;
   margin-left: 1rem;
-  font-family: var(--font-mono);
-  color: var(--color-paragraph);
+  font-family: "Roboto Mono", monospace;
+  color: #636a81;
   font-size: 1.1rem;
   font-weight: 400;
 }
 
 /* Projects that I made */
 .work__title {
-  color: var(--color-primary);
+  color: #7493f8;
   margin-top: 8rem;
-  font-family: var(--font-sans);
+  font-family: "Open Sans", sans-serif;
   font-size: 1.6rem;
+  text-align: center;
   font-weight: 800;
 }
-
-.file-icon {
-  margin-top: 1rem;
-  margin-left: 1rem;
-}
-
-/* Style the counter cards */
-.work_card {
+.work__card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   padding: 16px;
   margin-top: 3rem;
   margin-left: 2rem;
-  background-color: var(--card-bg);
+  background-color: #496088;
   width: 413px;
   position: relative;
   transition: 0.5s;
@@ -196,62 +188,60 @@ body {
   height: max-content;
   gap: 1rem;
 }
-
-.work_card:hover {
-  transform: translate(0, -10px);
-}
-
-.work_card__grid {
-  display: grid;
-  margin-left: 1.4rem;
-  grid-template-columns: repeat(2, 1fr);
-  /* place-items: center; */
-}
-
-.work_card__title {
+.work__card__title {
   margin-top: 1.5rem;
-  font-family: var(--font-sans);
-  color: var(--card-primary);
+  font-family: "Open Sans", sans-serif;
+  color: #ccd7f7;
   font-size: 1.2rem;
   text-align: left;
   margin-left: 1rem;
 }
-
-.work_card__link {
+.work__card__description {
+  font-family: "Open Sans", sans-serif;
+  color: #ccd7f7;
+  margin-top: 2rem;
+  line-height: 2rem;
+  margin-left: 1rem;
+}
+.work__card__programs {
+  position: relative;
+  font-family: "Roboto Mono", monospace;
+  font-size: 0.9rem;
+  color: #ccd7f7;
+  display: flex;
+  margin-left: 1rem;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+.work__card__link {
   right: 2.5rem;
   top: 2.5rem;
   position: absolute;
 }
-
-.work_card__link svg path:hover {
-  stroke: var(--color-primary);
+.work__card__linksvg path:hover {
+  stroke: #7493f8;
+}
+.work__card__file-icon {
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
+.work__card:hover {
+  transform: translate(0, -10px);
+}
+.work__card__grid {
+  display: grid;
+  margin-left: 1.4rem;
+  grid-template-columns: repeat(2, 1fr);
+  place-items: center;
 }
 
+/* Style the counter cards */
 .hero {
   margin-left: 2rem;
 }
 
 .about {
   margin-left: 2rem;
-}
-
-.work_card__description {
-  font-family: var(--font-sans);
-  color: var(--card-primary);
-  margin-top: 2rem;
-  line-height: 2rem;
-  margin-left: 1rem;
-}
-
-.work_card__programs {
-  position: relative;
-  font-family: var(--font-mono);
-  font-size: 0.9rem;
-  color: var(--card-primary);
-  display: flex;
-  margin-left: 1rem;
-  gap: 1rem;
-  margin-top: 1.5rem;
 }
 
 /* Contact Section */

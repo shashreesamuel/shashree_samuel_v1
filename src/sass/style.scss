@@ -143,32 +143,34 @@ body {
 
 /* About Section */
 
-.about__title {
-  color: var(--color-primary);
-  margin-top: 8rem;
-  margin-left: 2rem;
-  font-family: var(--font-sans);
-  font-size: 1.6rem;
-  font-weight: 800;
-}
+.about {
+  &__title {
+    color: $color-primary;
+    margin-top: 8rem;
+    margin-left: 2rem;
+    font-family: $font-sans;
+    font-size: 1.6rem;
+    font-weight: 800;
+    text-align: center;
+  }
 
-.about__description {
-  color: var(--color-paragraph);
-  font-size: 1.2rem;
-  margin-top: 2rem;
-  margin-left: 2rem;
-  line-height: 2rem;
-  font-family: var(--font-sans);
-  margin-right: 1rem;
-}
-
-.about__description--sub {
-  margin-top: 2rem;
-  margin-left: 2rem;
-  font-size: 1.1rem;
-  font-family: var(--font-sans);
-  color: var(--color-paragraph);
-  margin-bottom: 2rem;
+  &__description {
+    color: $color-paragraph;
+    font-size: 1.2rem;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    line-height: 2rem;
+    font-family: $font-sans;
+    margin-right: 1rem;
+  }
+  &__subdescription {
+    margin-top: 2rem;
+    margin-left: 2rem;
+    font-size: 1.1rem;
+    font-family: $font-sans;
+    color: $color-paragraph;
+    margin-bottom: 2rem;
+  }
 }
 
 /* Programming Languages Grid */
@@ -186,76 +188,95 @@ body {
   margin-top: 2rem;
   width: 100%;
   height: 100%;
-}
 
-.card__title {
-  display: inline-block;
-  margin-left: 1rem;
-  font-family: var(--font-mono);
-  color: var(--color-paragraph);
-  font-size: 1.1rem;
-  font-weight: 400;
+  &__title {
+    display: inline-block;
+    margin-left: 1rem;
+    font-family: $font-mono;
+    color: $color-paragraph;
+    font-size: 1.1rem;
+    font-weight: 400;
+  }
 }
 
 /* Projects that I made */
 
-.work__title {
-  color: var(--color-primary);
-  margin-top: 8rem;
-  font-family: var(--font-sans);
-  font-size: 1.6rem;
-  font-weight: 800;
-}
+.work {
+  &__title {
+    color: $color-primary;
+    margin-top: 8rem;
+    font-family: $font-sans;
+    font-size: 1.6rem;
+    text-align: center;
+    font-weight: 800;
+  }
+  &__card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    margin-top: 3rem;
+    margin-left: 2rem;
+    background-color: $card-bg;
+    width: 413px;
+    position: relative;
+    transition: 0.5s;
+    border-radius: 0.3rem;
+    height: max-content;
+    gap: 1rem;
+    &__title {
+      margin-top: 1.5rem;
+      font-family: $font-sans;
+      color: $card-primary;
+      font-size: 1.2rem;
+      text-align: left;
+      margin-left: 1rem;
+    }
 
-.file-icon {
-  margin-top: 1rem;
-  margin-left: 1rem;
+    &__description {
+      font-family: $font-sans;
+      color: $card-primary;
+      margin-top: 2rem;
+      line-height: 2rem;
+      margin-left: 1rem;
+    }
+
+    &__programs {
+      position: relative;
+      font-family: $font-mono;
+      font-size: 0.9rem;
+      color: $card-primary;
+      display: flex;
+      margin-left: 1rem;
+      gap: 1rem;
+      margin-top: 1.5rem;
+    }
+
+    &__link {
+      right: 2.5rem;
+      top: 2.5rem;
+      position: absolute;
+
+      &svg path:hover {
+        stroke: $color-primary;
+      }
+    }
+
+    &__file-icon {
+      margin-top: 1rem;
+      margin-left: 1rem;
+    }
+  }
+  &__card:hover {
+    transform: translate(0, -10px);
+  }
+  &__card__grid {
+    display: grid;
+    margin-left: 1.4rem;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+  }
 }
 
 /* Style the counter cards */
-.work_card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  padding: 16px;
-  margin-top: 3rem;
-  margin-left: 2rem;
-  background-color: var(--card-bg);
-  width: 413px;
-  position: relative;
-  transition: 0.5s;
-  border-radius: 0.3rem;
-  height: max-content;
-  gap: 1rem;
-}
-
-.work_card:hover {
-  transform: translate(0, -10px);
-}
-
-.work_card__grid {
-  display: grid;
-  margin-left: 1.4rem;
-  grid-template-columns: repeat(2, 1fr);
-  /* place-items: center; */
-}
-
-.work_card__title {
-  margin-top: 1.5rem;
-  font-family: var(--font-sans);
-  color: var(--card-primary);
-  font-size: 1.2rem;
-  text-align: left;
-  margin-left: 1rem;
-}
-
-.work_card__link {
-  right: 2.5rem;
-  top: 2.5rem;
-  position: absolute;
-}
-
-.work_card__link svg path:hover {
-  stroke: var(--color-primary);
-}
 
 .hero {
   margin-left: 2rem;
@@ -264,23 +285,8 @@ body {
 .about {
   margin-left: 2rem;
 }
-.work_card__description {
-  font-family: var(--font-sans);
-  color: var(--card-primary);
-  margin-top: 2rem;
-  line-height: 2rem;
-  margin-left: 1rem;
-}
 
 .work_card__programs {
-  position: relative;
-  font-family: var(--font-mono);
-  font-size: 0.9rem;
-  color: var(--card-primary);
-  display: flex;
-  margin-left: 1rem;
-  gap: 1rem;
-  margin-top: 1.5rem;
 }
 
 /* Contact Section */
