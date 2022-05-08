@@ -164,7 +164,7 @@ ion-icon {
 .about__title {
   color: var(--color-primary);
   margin-top: 8rem;
-  margin-left: 2rem;
+  text-align: center;
   font-family: var(--font-sans);
   font-size: 1.6rem;
   font-weight: 800;
@@ -219,8 +219,8 @@ ion-icon {
 
 .work__title {
   color: var(--color-primary);
-  margin-left: 3.5rem;
   margin-top: 8rem;
+  text-align: center;
   font-family: var(--font-sans);
   font-size: 1.6rem;
   font-weight: 800;
@@ -252,9 +252,8 @@ ion-icon {
 
 .work_card__grid {
   display: grid;
-  margin-left: 1.4rem;
   grid-template-columns: repeat(2, 1fr);
-  /* place-items: center; */
+  place-items: center;
 }
 
 .work_card__title {
@@ -309,29 +308,28 @@ ion-icon {
 
 /* Contact Section */
 
+.contact{
+  text-align: center;
+}
+
 .contact__title {
   color: var(--color-primary);
   font-weight: 800;
   font-family: var(--font-sans);
   font-size: 1.6rem;
-  margin-top: 7rem;
-  margin-left: 3rem;
+  margin-block-start: 4em;
 }
 
 .contact__description {
   margin-top: 2rem;
   font-family: var(--font-sans);
   color: var(--color-paragraph);
-  position: absolute;
   font-size: 1.2rem;
-  margin-left: 3rem;
-  margin-right: 2rem;
   line-height: 2rem;
+  margin-block-end: 5em;
 }
 
 .contact__button {
-  position: absolute;
-  margin-top: 12rem;
   text-align: center;
   text-decoration: none;
   font-size: 1.1rem;
@@ -339,14 +337,13 @@ ion-icon {
   color: var(--color-primary);
   border: 2px solid var(--color-primary);
   padding: 16px;
-  margin-left: 3rem;
   border-radius: 0.2rem;
 }
 
 .contact__button:hover {
   background-color: var(--color-primary);
   color: var(--color-light);
-  transition: all 300ms ease-in-out;
+  transition: color 300ms ease-in-out;
 }
 
 /* Footer Section */
@@ -357,12 +354,10 @@ ion-icon {
 
 
 .social-icons {
-  position: absolute;
-  margin-top: 25rem;
-  margin-bottom: 2rem;
+  margin-top: 4rem;
+  text-align: center;
   justify-content: center;
   align-items: center;
-  margin-left: 3rem;
 }
 
 .social-icons:visited {
@@ -374,7 +369,6 @@ ion-icon {
 }
 
 .social-icons p {
-  display: inline-block;
   color: var(--color-dark);
   font-family: var(--font-sans);
 }
@@ -410,12 +404,10 @@ ion-icon {
 
 .footer-copyright {
   font-family: var(--font-mono);
-  margin-top: 30rem;
-  position: absolute;
   text-align: center;
+  margin-block-start: 2em;
   color: var(--color-primary);
   font-weight: 500;
-  margin-left: 3rem;
 }
 
 .footer-email {
@@ -481,32 +473,21 @@ ion-icon {
     margin-left: 0;
   }
 
-  .work__title {
-    margin-left: 2rem;
-  }
-
-  .contact__title {
-    margin-left: 2rem;
-  }
-
-  .footer-copyright {
-    margin-left: 2rem;
-  }
-
-  .social-icons {
-    margin-left: 2rem;
-  }
-
   .work_card__grid {
     margin-left: 0;
   }
 
-  .contact__description {
-    margin-left: 2rem;
-  }
-
   .header {
     margin-left: 0;
+  }
+
+  .contact__title{
+    margin-top: 6em;
+  }
+
+  .social-icons{
+    justify-content: center;
+    align-items: center;
   }
 }
 @media screen and (max-width: 768px) {
@@ -559,8 +540,8 @@ ion-icon {
     font-size: 1.4rem;
   }
 
-  .work__title {
-    margin-left: 12rem;
+  .contact__title{
+    margin-top: 4em;
   }
 }
 
@@ -571,31 +552,11 @@ ion-icon {
     margin-left: 0;
   }
 
-  .work__title,
-  .contact__title {
-    text-align: left;
-  }
 
-  .social-icons {
-    margin-left: 9rem;
-  }
-
-  .footer-copyright {
-    margin-left: 6rem;
-  }
-
-  .contact__button {
-    margin-left: 8rem;
-  }
 
   .contact__description {
-    margin-left: 2rem;
-    text-align: left;
+    text-align: center;
     font-size: 1.1rem;
-  }
-
-  .social-icons {
-    margin-left: 6rem;
   }
 
   .about__description {
@@ -607,16 +568,20 @@ ion-icon {
     white-space: nowrap;
   }
 
-  .contact__title {
-    margin-left: 2rem;
-  }
-
   .work__title {
-    margin-left: 2rem;
+    text-align: center;
   }
 
   .header {
     margin-left: 0;
+  }
+  .social-icons{
+    /* align-items: center;
+    justify-content: center; */
+    text-align: center;
+  }
+  .contact{
+    text-align: center;
   }
 }
 .nav-active {
@@ -664,6 +629,8 @@ ion-icon {
   .social-icons p {
     --color-secondary: #a7afc7;
     color: var(--color-secondary);
+    align-items: center;
+    justify-content: center;
   }
 
   .sticky {
