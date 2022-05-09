@@ -1,9 +1,7 @@
-
-
 const navSlide = () => {
   const burger = document.querySelector(".burger");
   const nav = document.querySelector(".navbar__navlinks");
-  const navLinks = document.querySelectorAll(".navlinks__navitem");
+  const navLinks = document.querySelectorAll(".navbar__navlinks__navitem");
   // Toggle nav
   burger.addEventListener("click", () => {
     nav.classList.toggle("nav-active");
@@ -104,4 +102,3 @@ darkModeToggle.addEventListener("click", () => {
     disableDarkMode();
   }
 });
-

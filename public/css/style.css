@@ -16,6 +16,14 @@ body {
   min-height: 100vh;
 }
 
+.darkMode {
+  --bg: #0a192f;
+  --card-bg: #3457c7;
+  --color-secondary: #a7afc7;
+  --color-paragraph: #fff;
+  --sticky-background: #132949;
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -32,7 +40,7 @@ body {
 .navbar__navlinks__navitem {
   list-style: none;
 }
-.navbar__navlink {
+.navbar__navlinks__navlink {
   color: #7493f8;
   text-decoration: none;
   font-size: 19px;
@@ -40,7 +48,7 @@ body {
 }
 .navbar__logo {
   color: #7493f8;
-  margin-left: 2rem;
+  margin-inline-start: 2rem;
   font-size: 1.3rem;
 }
 
@@ -50,20 +58,24 @@ body {
   position: absolute;
   right: 2rem;
 }
-.burger__line1 {
+
+.line1 {
   width: 27px;
   height: 3px;
 }
-.burger__line2 {
+
+.line2 {
   width: 22px;
   height: 3px;
 }
-.burger__line3 {
+
+.line3 {
   width: 19px;
   height: 3px;
 }
-.burger__menu {
-  background-color: #636a81;
+
+.burger div {
+  background-color: #7493f8;
   margin: 5px;
   transition: all 0.3s ease;
   border-radius: 2px;
@@ -77,28 +89,31 @@ body {
 }
 
 /* Hero Section */
+.hero {
+  margin-inline-start: 2em;
+}
 .hero__small-title {
   color: #7493f8;
-  margin-top: 3rem;
+  margin-block-start: 3rem;
   font-family: "Roboto Mono", monospace;
   font-size: 1.1875rem;
   font-weight: 500;
-  margin-left: 2rem;
+  margin-inline-start: 2rem;
 }
 .hero__large-title {
   color: #7493f8;
   font-weight: 800;
   font-size: 2.1rem;
-  margin-left: 2rem;
-  margin-top: 1.5rem;
+  margin-inline-start: 2rem;
+  margin-block-start: 1.5rem;
   font-family: "Open Sans", sans-serif;
 }
 .hero__subtitle {
   font-family: "Open Sans", sans-serif;
-  margin-left: 2rem;
-  margin-top: 1.5rem;
+  margin-inline-start: 2rem;
+  margin-block-start: 1.5rem;
   font-size: 2rem;
-  margin-right: 2rem;
+  margin-inline-end: 2rem;
   line-height: 3.185rem;
   color: #888b92;
   font-weight: 800;
@@ -108,17 +123,20 @@ body {
   font-weight: 500;
   font-size: 1.1rem;
   color: #888b92;
-  margin-left: 2rem;
-  margin-top: 1.5rem;
+  margin-inline-start: 2rem;
+  margin-block-start: 1.5rem;
   line-height: 2rem;
-  margin-right: 2rem;
+  margin-inline-end: 2rem;
 }
 
 /* About Section */
+.about {
+  margin-inline-start: 2em;
+}
 .about__title {
   color: #7493f8;
-  margin-top: 8rem;
-  margin-left: 2rem;
+  margin-block-start: 8rem;
+  margin-inline-start: 2rem;
   font-family: "Open Sans", sans-serif;
   font-size: 1.6rem;
   font-weight: 800;
@@ -127,39 +145,37 @@ body {
 .about__description {
   color: #636a81;
   font-size: 1.2rem;
-  margin-top: 2rem;
-  margin-left: 2rem;
+  margin-block-start: 2rem;
+  margin-inline-start: 2rem;
   line-height: 2rem;
   font-family: "Open Sans", sans-serif;
-  margin-right: 1rem;
+  margin-inline-end: 1rem;
 }
 .about__subdescription {
-  margin-top: 2rem;
-  margin-left: 2rem;
+  margin-block-start: 2rem;
+  margin-inline-start: 2rem;
   font-size: 1.1rem;
   font-family: "Open Sans", sans-serif;
   color: #636a81;
-  margin-bottom: 2rem;
+  margin-block-end: 2rem;
 }
-
-/* Programming Languages Grid */
-.grid-container {
+.about__grid-container {
   max-width: 1200px;
   margin: 0 auto;
-  margin-left: 2rem;
+  margin-inline-start: 2rem;
   display: grid;
   grid-gap: 1rem;
   grid-template-columns: repeat(2, 1fr);
 }
 
 .card {
-  margin-top: 2rem;
+  margin-block-start: 2rem;
   width: 100%;
   height: 100%;
 }
 .card__title {
   display: inline-block;
-  margin-left: 1rem;
+  margin-inline-start: 1rem;
   font-family: "Roboto Mono", monospace;
   color: #636a81;
   font-size: 1.1rem;
@@ -169,7 +185,7 @@ body {
 /* Projects that I made */
 .work__title {
   color: #7493f8;
-  margin-top: 8rem;
+  margin-block-start: 8rem;
   font-family: "Open Sans", sans-serif;
   font-size: 1.6rem;
   text-align: center;
@@ -178,30 +194,30 @@ body {
 .work__card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   padding: 16px;
-  margin-top: 3rem;
-  margin-left: 2rem;
+  margin-block-start: 3rem;
+  margin-inline-start: 2rem;
   background-color: #496088;
-  width: 413px;
+  width: 70%;
   position: relative;
-  transition: 0.5s;
+  transition: 0.6s;
   border-radius: 0.3rem;
   height: max-content;
   gap: 1rem;
 }
 .work__card__title {
-  margin-top: 1.5rem;
+  margin-block-start: 1.5rem;
   font-family: "Open Sans", sans-serif;
   color: #ccd7f7;
   font-size: 1.2rem;
   text-align: left;
-  margin-left: 1rem;
+  margin-inline-start: 1rem;
 }
 .work__card__description {
   font-family: "Open Sans", sans-serif;
   color: #ccd7f7;
-  margin-top: 2rem;
+  margin-block-start: 1.5rem;
   line-height: 2rem;
-  margin-left: 1rem;
+  margin-inline-start: 1rem;
 }
 .work__card__programs {
   position: relative;
@@ -209,9 +225,9 @@ body {
   font-size: 0.9rem;
   color: #ccd7f7;
   display: flex;
-  margin-left: 1rem;
+  margin-inline-start: 1rem;
   gap: 1rem;
-  margin-top: 1.5rem;
+  margin-block-start: 1.5rem;
 }
 .work__card__link {
   right: 2.5rem;
@@ -222,109 +238,93 @@ body {
   stroke: #7493f8;
 }
 .work__card__file-icon {
-  margin-top: 1rem;
-  margin-left: 1rem;
+  margin-block-start: 1rem;
+  margin-inline-start: 1rem;
 }
 .work__card:hover {
   transform: translate(0, -10px);
 }
 .work__card__grid {
   display: grid;
-  margin-left: 1.4rem;
   grid-template-columns: repeat(2, 1fr);
   place-items: center;
-}
-
-/* Style the counter cards */
-.hero {
-  margin-left: 2rem;
-}
-
-.about {
-  margin-left: 2rem;
 }
 
 /* Contact Section */
 .contact {
   text-align: center;
 }
-
-.centered {
-  display: grid;
-  place-items: center;
-}
-
 .contact__title {
-  color: var(--color-primary);
+  margin-block-start: 2em;
+  color: #7493f8;
   font-weight: 800;
-  font-family: var(--font-sans);
+  font-family: "Open Sans", sans-serif;
   font-size: 1.6rem;
   text-align: center;
-  /* margin-top: 7rem;
-  margin-left: 3rem; */
+  margin-block-end: 1em;
 }
-
 .contact__description {
-  margin-top: 2rem;
-  font-family: var(--font-sans);
-  color: var(--color-paragraph);
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  color: #636a81;
   font-size: 1.2rem;
-  margin-left: 3rem;
-  margin-right: 2rem;
-  margin-bottom: 3em;
+  margin-block-end: 4em;
   line-height: 2rem;
 }
-
 .contact__button {
-  margin-top: 12rem;
-  text-align: center;
-  margin-left: 2em;
+  margin-block-start: 2rem;
   text-decoration: none;
-  top: 0;
   font-size: 1.1rem;
-  font-family: var(--font-mono);
-  color: var(--color-primary);
-  border: 2px solid var(--color-primary);
+  font-family: "Roboto Mono", monospace;
+  color: #7493f8;
+  border: 2px solid #7493f8;
   padding: 16px;
   border-radius: 0.2rem;
 }
-
 .contact__button:hover {
-  background-color: var(--color-primary);
-  color: var(--color-light);
+  background-color: #7493f8;
+  color: white;
   transition: all 300ms ease-in-out;
 }
 
 /* Footer Section */
 .footer {
   position: relative;
+  text-align: center;
 }
-
-.social-icons {
-  position: absolute;
-  margin-top: 25rem;
-  margin-bottom: 2rem;
+.footer__social-icons {
+  margin-block-start: 4rem;
+  margin-block-end: 2rem;
   justify-content: center;
   align-items: center;
-  margin-left: 3rem;
+  margin-inline-start: 3rem;
 }
-
-.social-icons:visited {
+.footer__social-icons:visited {
   border: none;
 }
-
-.social-icons svg {
-  margin-right: 2rem;
-}
-
-.social-icons p {
+.footer__social-icons p {
   display: inline-block;
-  color: var(--color-dark);
-  font-family: var(--font-sans);
+  color: black;
+  font-family: "Open Sans", sans-serif;
 }
-
-.social-icons p:visited {
-  color: var(--color-dark);
+.footer__social-icons svg {
+  margin-inline-end: 2rem;
+}
+.footer__copyright {
+  font-family: "Roboto Mono", monospace;
+  margin-block-start: 2rem;
+  text-align: center;
+  color: #7493f8;
+  font-weight: 500;
+}
+.footer__email {
+  margin-inline-start: 5rem;
+  font-family: var(--font-mono);
+  color: var(--color-primary);
+  transform: rotate(90deg);
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 
 .social-icons--insta {
@@ -346,31 +346,11 @@ body {
 .social-icons--codepen path,
 .social-icons--github path,
 .social-icons--insta path {
-  stroke: var(--color-primary);
+  stroke: #7493f8;
 }
 
 .social-icons--behance path {
-  fill: var(--color-primary);
-}
-
-.footer-copyright {
-  font-family: var(--font-mono);
-  margin-top: 30rem;
-  position: absolute;
-  text-align: center;
-  color: var(--color-primary);
-  font-weight: 500;
-  margin-left: 3rem;
-}
-
-.footer-email {
-  margin-left: 5rem;
-  font-family: var(--font-mono);
-  color: var(--color-primary);
-  transform: rotate(90deg);
-  position: absolute;
-  bottom: 0;
-  right: 0;
+  fill: #7493f8;
 }
 
 /* Browser Scrollbar Styling */
@@ -391,7 +371,7 @@ body {
   top: 0;
   width: 100%;
   z-index: 999;
-  background-color: var(--sticky-background);
+  background-color: white;
   opacity: 0.9;
   box-shadow: 1px 1px 5px -2px rgba(0, 0, 0, 0.75);
   transition: all 1s ease;
@@ -411,45 +391,45 @@ body {
     width: 60%;
   }
 
-  .work_card__grid {
+  .work__card__grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
 
   .hero {
-    margin-left: 0;
+    margin-inline-start: 0;
   }
 
   .about {
-    margin-left: 0;
+    margin-inline-start: 0;
   }
 
   .work__title {
-    margin-left: 2rem;
+    margin-inline-start: 2rem;
   }
 
   .contact__title {
-    margin-left: 2rem;
+    margin-inline-start: 2rem;
   }
 
   .footer-copyright {
-    margin-left: 2rem;
+    margin-inline-start: 2rem;
   }
 
   .social-icons {
-    margin-left: 2rem;
+    margin-inline-start: 2rem;
   }
 
   .work_card__grid {
-    margin-left: 0;
+    margin-inline-start: 0;
   }
 
   .contact__description {
-    margin-left: 2rem;
+    margin-inline-start: 2rem;
   }
 
   .header {
-    margin-left: 0;
+    margin-inline-start: 0;
   }
 }
 @media screen and (max-width: 768px) {
@@ -504,65 +484,29 @@ body {
   }
 }
 @media screen and (max-width: 600px) {
-  .work_card__grid {
+  .work__card__grid {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    margin-left: 0;
-  }
-
-  /* .work__title,
-  .contact__title {
-    text-align: left;
-  } */
-  /* .social-icons {
-    margin-left: 9rem;
-  }
-
-  .footer-copyright {
-    margin-left: 6rem;
+    margin-inline-start: 0;
   }
 
   .contact__description {
-    margin-left: 2rem;
+    margin-inline-start: 2rem;
     text-align: left;
     font-size: 1.1rem;
   }
 
-  .social-icons {
-    margin-left: 6rem;
+  .work__title,
+.contact__title {
+    white-space: nowrap;
   }
 
   .about__description {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
-
-  .work__title,
-  .contact__title {
-    white-space: nowrap;
-  } */
-  /* .contact__title {
-    margin-left: 2rem;
-  }
-
-  .work__title {
-    margin-left: 2rem;
-  }
-
-  .header {
-    margin-left: 0;
-  } */
 }
 .nav-active {
   transform: translateX(0%);
-  /* position: fixed;
-  top: 4rem;
-  z-index: 999;
-  background-color: white;
-  opacity: 0.9;
-  box-shadow: 1px 1px 5px -2px rgba(0, 0, 0, 0.75);
-  transition: all 1s ease;
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px); */
 }
 
 @media screen and (min-width: 390px) {

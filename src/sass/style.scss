@@ -10,7 +10,7 @@ $bg: #fcfcfc;
 $color-primary: #7493f8;
 $color-secondary: #888b92;
 $color-paragraph: #636a81;
-$sticky-background: var(--color-light);
+$sticky-background: $color-light;
 
 *,
 *::before,
@@ -29,6 +29,14 @@ body {
   min-height: 100vh;
 }
 
+.darkMode {
+  --bg: #0a192f;
+  --card-bg: #3457c7;
+  --color-secondary: #a7afc7;
+  --color-paragraph: #fff;
+  --sticky-background: #132949;
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -45,18 +53,18 @@ body {
     &__navitem {
       list-style: none;
     }
-  }
 
-  &__navlink {
-    color: $color-primary;
-    text-decoration: none;
-    font-size: 19px;
-    font-weight: 500;
+    &__navlink {
+      color: $color-primary;
+      text-decoration: none;
+      font-size: 19px;
+      font-weight: 500;
+    }
   }
 
   &__logo {
     color: $color-primary;
-    margin-left: 2rem;
+    margin-inline-start: 2rem;
     font-size: 1.3rem;
   }
 }
@@ -66,30 +74,28 @@ body {
   cursor: pointer;
   position: absolute;
   right: 2rem;
-
-  &__line1 {
-    width: 27px;
-    height: 3px;
-  }
-
-  &__line2 {
-    width: 22px;
-    height: 3px;
-  }
-
-  &__line3 {
-    width: 19px;
-    height: 3px;
-  }
-
-  &__menu {
-    background-color: $color-paragraph;
-    margin: 5px;
-    transition: all 0.3s ease;
-    border-radius: 2px;
-  }
+}
+.line1 {
+  width: 27px;
+  height: 3px;
 }
 
+.line2 {
+  width: 22px;
+  height: 3px;
+}
+
+.line3 {
+  width: 19px;
+  height: 3px;
+}
+
+.burger div {
+  background-color: $color-primary;
+  margin: 5px;
+  transition: all 0.3s ease;
+  border-radius: 2px;
+}
 .dark-mode-toggle {
   font-size: 1.4rem;
   color: $color-primary;
@@ -100,30 +106,31 @@ body {
 /* Hero Section */
 
 .hero {
+  margin-inline-start: 2em;
   &__small-title {
     color: $color-primary;
-    margin-top: 3rem;
+    margin-block-start: 3rem;
     font-family: $font-mono;
     font-size: 1.1875rem;
     font-weight: 500;
-    margin-left: 2rem;
+    margin-inline-start: 2rem;
   }
 
   &__large-title {
     color: $color-primary;
     font-weight: 800;
     font-size: 2.1rem;
-    margin-left: 2rem;
-    margin-top: 1.5rem;
+    margin-inline-start: 2rem;
+    margin-block-start: 1.5rem;
     font-family: $font-sans;
   }
 
   &__subtitle {
     font-family: $font-sans;
-    margin-left: 2rem;
-    margin-top: 1.5rem;
+    margin-inline-start: 2rem;
+    margin-block-start: 1.5rem;
     font-size: 2rem;
-    margin-right: 2rem;
+    margin-inline-end: 2rem;
     line-height: 3.185rem;
     color: $color-secondary;
     font-weight: 800;
@@ -134,20 +141,21 @@ body {
     font-weight: 500;
     font-size: 1.1rem;
     color: $color-secondary;
-    margin-left: 2rem;
-    margin-top: 1.5rem;
+    margin-inline-start: 2rem;
+    margin-block-start: 1.5rem;
     line-height: 2rem;
-    margin-right: 2rem;
+    margin-inline-end: 2rem;
   }
 }
 
 /* About Section */
 
 .about {
+  margin-inline-start: 2em;
   &__title {
     color: $color-primary;
-    margin-top: 8rem;
-    margin-left: 2rem;
+    margin-block-start: 8rem;
+    margin-inline-start: 2rem;
     font-family: $font-sans;
     font-size: 1.6rem;
     font-weight: 800;
@@ -157,41 +165,39 @@ body {
   &__description {
     color: $color-paragraph;
     font-size: 1.2rem;
-    margin-top: 2rem;
-    margin-left: 2rem;
+    margin-block-start: 2rem;
+    margin-inline-start: 2rem;
     line-height: 2rem;
     font-family: $font-sans;
-    margin-right: 1rem;
+    margin-inline-end: 1rem;
   }
   &__subdescription {
-    margin-top: 2rem;
-    margin-left: 2rem;
+    margin-block-start: 2rem;
+    margin-inline-start: 2rem;
     font-size: 1.1rem;
     font-family: $font-sans;
     color: $color-paragraph;
-    margin-bottom: 2rem;
+    margin-block-end: 2rem;
+  }
+
+  &__grid-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-inline-start: 2rem;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
-/* Programming Languages Grid */
-
-.grid-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  margin-left: 2rem;
-  display: grid;
-  grid-gap: 1rem;
-  grid-template-columns: repeat(2, 1fr);
-}
-
 .card {
-  margin-top: 2rem;
+  margin-block-start: 2rem;
   width: 100%;
   height: 100%;
 
   &__title {
     display: inline-block;
-    margin-left: 1rem;
+    margin-inline-start: 1rem;
     font-family: $font-mono;
     color: $color-paragraph;
     font-size: 1.1rem;
@@ -204,7 +210,7 @@ body {
 .work {
   &__title {
     color: $color-primary;
-    margin-top: 8rem;
+    margin-block-start: 8rem;
     font-family: $font-sans;
     font-size: 1.6rem;
     text-align: center;
@@ -213,30 +219,30 @@ body {
   &__card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     padding: 16px;
-    margin-top: 3rem;
-    margin-left: 2rem;
+    margin-block-start: 3rem;
+    margin-inline-start: 2rem;
     background-color: $card-bg;
-    width: 413px;
+    width: 70%;
     position: relative;
-    transition: 0.5s;
+    transition: 0.6s;
     border-radius: 0.3rem;
     height: max-content;
     gap: 1rem;
     &__title {
-      margin-top: 1.5rem;
+      margin-block-start: 1.5rem;
       font-family: $font-sans;
       color: $card-primary;
       font-size: 1.2rem;
       text-align: left;
-      margin-left: 1rem;
+      margin-inline-start: 1rem;
     }
 
     &__description {
       font-family: $font-sans;
       color: $card-primary;
-      margin-top: 2rem;
+      margin-block-start: 1.5rem;
       line-height: 2rem;
-      margin-left: 1rem;
+      margin-inline-start: 1rem;
     }
 
     &__programs {
@@ -245,9 +251,9 @@ body {
       font-size: 0.9rem;
       color: $card-primary;
       display: flex;
-      margin-left: 1rem;
+      margin-inline-start: 1rem;
       gap: 1rem;
-      margin-top: 1.5rem;
+      margin-block-start: 1.5rem;
     }
 
     &__link {
@@ -261,8 +267,8 @@ body {
     }
 
     &__file-icon {
-      margin-top: 1rem;
-      margin-left: 1rem;
+      margin-block-start: 1rem;
+      margin-inline-start: 1rem;
     }
   }
   &__card:hover {
@@ -270,109 +276,93 @@ body {
   }
   &__card__grid {
     display: grid;
-    margin-left: 1.4rem;
     grid-template-columns: repeat(2, 1fr);
     place-items: center;
   }
-}
-
-/* Style the counter cards */
-
-.hero {
-  margin-left: 2rem;
-}
-
-.about {
-  margin-left: 2rem;
-}
-
-.work_card__programs {
 }
 
 /* Contact Section */
 
 .contact {
   text-align: center;
-}
-
-.centered {
-  display: grid;
-  place-items: center;
-}
-
-.contact__title {
-  color: var(--color-primary);
-  font-weight: 800;
-  font-family: var(--font-sans);
-  font-size: 1.6rem;
-  text-align: center;
-  /* margin-top: 7rem;
-  margin-left: 3rem; */
-}
-
-.contact__description {
-  margin-top: 2rem;
-  font-family: var(--font-sans);
-  color: var(--color-paragraph);
-  font-size: 1.2rem;
-  margin-left: 3rem;
-  margin-right: 2rem;
-  margin-bottom: 3em;
-  line-height: 2rem;
-}
-
-.contact__button {
-  margin-top: 12rem;
-  text-align: center;
-  margin-left: 2em;
-  text-decoration: none;
-  top: 0;
-  font-size: 1.1rem;
-  font-family: var(--font-mono);
-  color: var(--color-primary);
-  border: 2px solid var(--color-primary);
-  padding: 16px;
-  border-radius: 0.2rem;
-}
-
-.contact__button:hover {
-  background-color: var(--color-primary);
-  color: var(--color-light);
-  transition: all 300ms ease-in-out;
+  &__title {
+    margin-block-start: 2em;
+    color: $color-primary;
+    font-weight: 800;
+    font-family: $font-sans;
+    font-size: 1.6rem;
+    text-align: center;
+    margin-block-end: 1em;
+  }
+  &__description {
+    text-align: center;
+    font-family: $font-sans;
+    color: $color-paragraph;
+    font-size: 1.2rem;
+    margin-block-end: 4em;
+    line-height: 2rem;
+  }
+  &__button {
+    margin-block-start: 2rem;
+    // margin-inline-start: 2em;
+    text-decoration: none;
+    // position: absolute;
+    font-size: 1.1rem;
+    font-family: $font-mono;
+    color: $color-primary;
+    border: 2px solid $color-primary;
+    padding: 16px;
+    border-radius: 0.2rem;
+    &:hover {
+      background-color: $color-primary;
+      color: $color-light;
+      transition: all 300ms ease-in-out;
+    }
+  }
 }
 
 /* Footer Section */
 
 .footer {
   position: relative;
+  text-align: center;
+  &__social-icons {
+    margin-block-start: 4rem;
+    margin-block-end: 2rem;
+    justify-content: center;
+    align-items: center;
+    margin-inline-start: 3rem;
+    &:visited {
+      border: none;
+    }
+    & p {
+      display: inline-block;
+      color: $color-dark;
+      font-family: $font-sans;
+    }
+
+    & svg {
+      margin-inline-end: 2rem;
+    }
+  }
+  &__copyright {
+    font-family: $font-mono;
+    margin-block-start: 2rem;
+    text-align: center;
+    color: $color-primary;
+    font-weight: 500;
+  }
+  &__email {
+    margin-inline-start: 5rem;
+    font-family: var(--font-mono);
+    color: var(--color-primary);
+    transform: rotate(90deg);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
 }
 
-.social-icons {
-  position: absolute;
-  margin-top: 25rem;
-  margin-bottom: 2rem;
-  justify-content: center;
-  align-items: center;
-  margin-left: 3rem;
-}
-
-.social-icons:visited {
-  border: none;
-}
-
-.social-icons svg {
-  margin-right: 2rem;
-}
-
-.social-icons p {
-  display: inline-block;
-  color: var(--color-dark);
-  font-family: var(--font-sans);
-}
-
-.social-icons p:visited {
-  color: var(--color-dark);
-}
 .social-icons--insta {
   text-decoration: none;
 }
@@ -392,31 +382,11 @@ body {
 .social-icons--codepen path,
 .social-icons--github path,
 .social-icons--insta path {
-  stroke: var(--color-primary);
+  stroke: $color-primary;
 }
 
 .social-icons--behance path {
-  fill: var(--color-primary);
-}
-
-.footer-copyright {
-  font-family: var(--font-mono);
-  margin-top: 30rem;
-  position: absolute;
-  text-align: center;
-  color: var(--color-primary);
-  font-weight: 500;
-  margin-left: 3rem;
-}
-
-.footer-email {
-  margin-left: 5rem;
-  font-family: var(--font-mono);
-  color: var(--color-primary);
-  transform: rotate(90deg);
-  position: absolute;
-  bottom: 0;
-  right: 0;
+  fill: $color-primary;
 }
 
 /* Browser Scrollbar Styling */
@@ -436,7 +406,7 @@ body {
   top: 0;
   width: 100%;
   z-index: 999;
-  background-color: var(--sticky-background);
+  background-color: $sticky-background;
   opacity: 0.9;
   box-shadow: 1px 1px 5px -2px rgba(0, 0, 0, 0.75);
   transition: all 1s ease;
@@ -459,45 +429,45 @@ body {
     width: 60%;
   }
 
-  .work_card__grid {
+  .work__card__grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
 
   .hero {
-    margin-left: 0;
+    margin-inline-start: 0;
   }
 
   .about {
-    margin-left: 0;
+    margin-inline-start: 0;
   }
 
   .work__title {
-    margin-left: 2rem;
+    margin-inline-start: 2rem;
   }
 
   .contact__title {
-    margin-left: 2rem;
+    margin-inline-start: 2rem;
   }
 
   .footer-copyright {
-    margin-left: 2rem;
+    margin-inline-start: 2rem;
   }
 
   .social-icons {
-    margin-left: 2rem;
+    margin-inline-start: 2rem;
   }
 
   .work_card__grid {
-    margin-left: 0;
+    margin-inline-start: 0;
   }
 
   .contact__description {
-    margin-left: 2rem;
+    margin-inline-start: 2rem;
   }
 
   .header {
-    margin-left: 0;
+    margin-inline-start: 0;
   }
 }
 @media screen and (max-width: 768px) {
@@ -552,67 +522,34 @@ body {
 }
 
 @media screen and (max-width: 600px) {
-  .work_card__grid {
+  .work__card__grid {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    margin-left: 0;
-  }
-
-  /* .work__title,
-  .contact__title {
-    text-align: left;
-  } */
-
-  /* .social-icons {
-    margin-left: 9rem;
-  }
-
-  .footer-copyright {
-    margin-left: 6rem;
+    margin-inline-start: 0;
   }
 
   .contact__description {
-    margin-left: 2rem;
+    margin-inline-start: 2rem;
     text-align: left;
     font-size: 1.1rem;
-  }
-
-  .social-icons {
-    margin-left: 6rem;
-  }
-
-  .about__description {
-    font-size: 1rem;
   }
 
   .work__title,
   .contact__title {
     white-space: nowrap;
-  } */
-
-  /* .contact__title {
-    margin-left: 2rem;
+  }
+  
+  .about__description{
+    font-size: 1.1rem;
   }
 
-  .work__title {
-    margin-left: 2rem;
-  }
-
-  .header {
-    margin-left: 0;
-  } */
 }
 .nav-active {
   transform: translateX(0%);
-  /* position: fixed;
-  top: 4rem;
-  z-index: 999;
-  background-color: white;
-  opacity: 0.9;
-  box-shadow: 1px 1px 5px -2px rgba(0, 0, 0, 0.75);
-  transition: all 1s ease;
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px); */
+  // background-color: white;
+  // opacity: 0.9;
+  // box-shadow: 1px 1px 5px -2px rgba(0, 0, 0, 0.75);
+  // transition: all 1s ease;
 }
 
 @media screen and (min-width: 390px) {
