@@ -2,14 +2,14 @@
 
 $font-mono: "Roboto Mono", monospace;
 $font-sans: "Open Sans", sans-serif;
-$card-bg: #496088;
+$card-bg: #3d547c;
 $card-primary: #ccd7f7;
 $color-light: white;
 $color-dark: black;
 $bg: #fcfcfc;
-$color-primary: #7493f8;
-$color-secondary: #888b92;
-$color-paragraph: #636a81;
+$color-primary: #446be8;
+$color-secondary: #6b6d72;
+$color-paragraph: #707277;
 $sticky-background: $color-light;
 
 *,
@@ -17,6 +17,14 @@ $sticky-background: $color-light;
 *::after {
   margin: 0;
   padding: 0;
+}
+
+.darkmode {
+  $bg: #0a192f;
+  $card-bg: #3457c7;
+  $color-secondary: #a7afc7;
+  $color-paragraph: #fff;
+  $sticky-background: #132949;
 }
 
 html {
@@ -29,14 +37,6 @@ body {
   min-height: 100vh;
 }
 
-.darkMode {
-  $bg: #0a192f;
-  $card-bg: #3457c7;
-  $color-secondary: #a7afc7;
-  $color-paragraph: #fff;
-  $sticky-background: #132949;
-}
-
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -44,6 +44,14 @@ body {
   position: relative;
   min-height: 8vh;
   font-family: $font-mono;
+
+  &__darkmode {
+    $bg: #0a192f;
+    $card-bg: #3457c7;
+    $color-secondary: #a7afc7;
+    $color-paragraph: #fff;
+    $sticky-background: #132949;
+  }
 
   &__navlinks {
     display: flex;
@@ -538,11 +546,10 @@ body {
   .contact__title {
     white-space: nowrap;
   }
-  
-  .about__description{
+
+  .about__description {
     font-size: 1.1rem;
   }
-
 }
 .nav-active {
   transform: translateX(0%);

@@ -33,13 +33,13 @@ body {
   list-style: none;
 }
 .navbar__navlinks__navlink {
-  color: #7493f8;
+  color: #446be8;
   text-decoration: none;
   font-size: 19px;
   font-weight: 500;
 }
 .navbar__logo {
-  color: #7493f8;
+  color: #446be8;
   margin-inline-start: 2rem;
   font-size: 1.3rem;
 }
@@ -67,7 +67,7 @@ body {
 }
 
 .burger div {
-  background-color: #7493f8;
+  background-color: #446be8;
   margin: 5px;
   transition: all 0.3s ease;
   border-radius: 2px;
@@ -75,7 +75,7 @@ body {
 
 .dark-mode-toggle {
   font-size: 1.4rem;
-  color: #7493f8;
+  color: #446be8;
   border: none;
   background: none;
 }
@@ -85,7 +85,7 @@ body {
   margin-inline-start: 2em;
 }
 .hero__small-title {
-  color: #7493f8;
+  color: #446be8;
   margin-block-start: 3rem;
   font-family: "Roboto Mono", monospace;
   font-size: 1.1875rem;
@@ -93,7 +93,7 @@ body {
   margin-inline-start: 2rem;
 }
 .hero__large-title {
-  color: #7493f8;
+  color: #446be8;
   font-weight: 800;
   font-size: 2.1rem;
   margin-inline-start: 2rem;
@@ -107,14 +107,14 @@ body {
   font-size: 2rem;
   margin-inline-end: 2rem;
   line-height: 3.185rem;
-  color: #888b92;
+  color: #6b6d72;
   font-weight: 800;
 }
 .hero__description {
   font-family: "Open Sans", sans-serif;
   font-weight: 500;
   font-size: 1.1rem;
-  color: #888b92;
+  color: #6b6d72;
   margin-inline-start: 2rem;
   margin-block-start: 1.5rem;
   line-height: 2rem;
@@ -126,7 +126,7 @@ body {
   margin-inline-start: 2em;
 }
 .about__title {
-  color: #7493f8;
+  color: #446be8;
   margin-block-start: 8rem;
   margin-inline-start: 2rem;
   font-family: "Open Sans", sans-serif;
@@ -135,7 +135,7 @@ body {
   text-align: center;
 }
 .about__description {
-  color: #636a81;
+  color: #707277;
   font-size: 1.2rem;
   margin-block-start: 2rem;
   margin-inline-start: 2rem;
@@ -148,7 +148,7 @@ body {
   margin-inline-start: 2rem;
   font-size: 1.1rem;
   font-family: "Open Sans", sans-serif;
-  color: #636a81;
+  color: #707277;
   margin-block-end: 2rem;
 }
 .about__grid-container {
@@ -169,14 +169,14 @@ body {
   display: inline-block;
   margin-inline-start: 1rem;
   font-family: "Roboto Mono", monospace;
-  color: #636a81;
+  color: #707277;
   font-size: 1.1rem;
   font-weight: 400;
 }
 
 /* Projects that I made */
 .work__title {
-  color: #7493f8;
+  color: #446be8;
   margin-block-start: 8rem;
   font-family: "Open Sans", sans-serif;
   font-size: 1.6rem;
@@ -188,7 +188,7 @@ body {
   padding: 16px;
   margin-block-start: 3rem;
   margin-inline-start: 2rem;
-  background-color: #496088;
+  background-color: #3d547c;
   width: 70%;
   position: relative;
   transition: 0.6s;
@@ -227,7 +227,7 @@ body {
   position: absolute;
 }
 .work__card__linksvg path:hover {
-  stroke: #7493f8;
+  stroke: #446be8;
 }
 .work__card__file-icon {
   margin-block-start: 1rem;
@@ -248,7 +248,7 @@ body {
 }
 .contact__title {
   margin-block-start: 2em;
-  color: #7493f8;
+  color: #446be8;
   font-weight: 800;
   font-family: "Open Sans", sans-serif;
   font-size: 1.6rem;
@@ -258,7 +258,7 @@ body {
 .contact__description {
   text-align: center;
   font-family: "Open Sans", sans-serif;
-  color: #636a81;
+  color: #707277;
   font-size: 1.2rem;
   margin-block-end: 4em;
   line-height: 2rem;
@@ -268,13 +268,13 @@ body {
   text-decoration: none;
   font-size: 1.1rem;
   font-family: "Roboto Mono", monospace;
-  color: #7493f8;
-  border: 2px solid #7493f8;
+  color: #446be8;
+  border: 2px solid #446be8;
   padding: 16px;
   border-radius: 0.2rem;
 }
 .contact__button:hover {
-  background-color: #7493f8;
+  background-color: #446be8;
   color: white;
   transition: all 300ms ease-in-out;
 }
@@ -306,13 +306,13 @@ body {
   font-family: "Roboto Mono", monospace;
   margin-block-start: 2rem;
   text-align: center;
-  color: #7493f8;
+  color: #446be8;
   font-weight: 500;
 }
 .footer__email {
   margin-inline-start: 5rem;
   font-family: "Roboto Mono", monospace;
-  color: #7493f8;
+  color: #446be8;
   transform: rotate(90deg);
   position: absolute;
   bottom: 0;
@@ -338,11 +338,11 @@ body {
 .social-icons--codepen path,
 .social-icons--github path,
 .social-icons--insta path {
-  stroke: #7493f8;
+  stroke: #446be8;
 }
 
 .social-icons--behance path {
-  fill: #7493f8;
+  fill: #446be8;
 }
 
 /* Browser Scrollbar Styling */

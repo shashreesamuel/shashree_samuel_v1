@@ -65,22 +65,24 @@ function myFunction() {
 // Dark Mode
 
 // check for saved 'darkMode' in localStorage
-let darkMode = localStorage.getItem("darkMode");
+let darkMode = localStorage.getItem("navbar__darkMode");
 
 const darkModeToggle = document.querySelector("#dark-mode-toggle");
 
 const enableDarkMode = () => {
   // 1. Add the class to the body
-  document.body.classList.add("darkMode");
+  document.body.classList.add("navbar__darkMode");
   // 2. Update darkMode in localStorage
-  localStorage.setItem("darkMode", "enabled");
+  localStorage.setItem("navbar__darkMode", "enabled");
+  console.log("Enabled");
 };
 
 const disableDarkMode = () => {
   // 1. Remove the class from the body
-  document.body.classList.remove("darkMode");
+  document.body.classList.remove("navbar__darkMode");
   // 2. Update darkMode in localStorage
-  localStorage.setItem("darkMode", null);
+  localStorage.setItem("navbar__darkMode", null);
+  console.log("Disabled");
 };
 
 // If the user already visited and enabled darkMode
@@ -92,7 +94,7 @@ if (darkMode === "enabled") {
 // When someone clicks the button
 darkModeToggle.addEventListener("click", () => {
   // get their darkMode setting
-  darkMode = localStorage.getItem("darkMode");
+  darkMode = localStorage.getItem("navbar__darkMode");
 
   // if it not current enabled, enable it
   if (darkMode !== "enabled") {
