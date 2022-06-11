@@ -1,4 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap");
+
+:root {
+  --font-mono: "Roboto Mono", monospace;
+  --font-sans: "Open Sans", sans-serif;
+  --card-bg: #3d547c;
+  --card-primary: #ccd7f7;
+  --color-light: white;
+  --color-dark: black;
+  --bg: #fcfcfc;
+  --color-primary: #446be8;
+  --color-secondary: #6b6d72;
+  --color-paragraph: #707277;
+  --sticky-background: $color-light;
+}
+
 *,
 *::before,
 *::after {
@@ -10,10 +25,19 @@ html {
   scroll-behavior: smooth;
 }
 
+.darkMode {
+  --bg: #0a192f;
+  --card-bg: #3457c7;
+  --color-secondary: #a7afc7;
+  --color-paragraph: #fff;
+  --sticky-background: #132949;
+}
+
 body {
   overflow-x: hidden;
-  background-color: #fcfcfc;
+  background-color: var(--bg);
   min-height: 100vh;
+  transition: background-color 1s;
 }
 
 .navbar {
@@ -33,13 +57,13 @@ body {
   list-style: none;
 }
 .navbar__navlinks__navlink {
-  color: #446be8;
+  color: var(--color-primary);
   text-decoration: none;
   font-size: 19px;
   font-weight: 500;
 }
 .navbar__logo {
-  color: #446be8;
+  color: var(--color-primary);
   margin-inline-start: 2rem;
   font-size: 1.3rem;
 }
@@ -67,7 +91,7 @@ body {
 }
 
 .burger div {
-  background-color: #446be8;
+  background-color: var(--color-primary);
   margin: 5px;
   transition: all 0.3s ease;
   border-radius: 2px;
@@ -75,7 +99,7 @@ body {
 
 .dark-mode-toggle {
   font-size: 1.4rem;
-  color: #446be8;
+  color: var(--color-primary);
   border: none;
   background: none;
 }
@@ -85,7 +109,7 @@ body {
   margin-inline-start: 2em;
 }
 .hero__small-title {
-  color: #446be8;
+  color: var(--color-primary);
   margin-block-start: 3rem;
   font-family: "Roboto Mono", monospace;
   font-size: 1.1875rem;
@@ -93,7 +117,7 @@ body {
   margin-inline-start: 2rem;
 }
 .hero__large-title {
-  color: #446be8;
+  color: var(--color-primary);
   font-weight: 800;
   font-size: 2.1rem;
   margin-inline-start: 2rem;
@@ -107,14 +131,14 @@ body {
   font-size: 2rem;
   margin-inline-end: 2rem;
   line-height: 3.185rem;
-  color: #6b6d72;
+  color: var(--color-secondary);
   font-weight: 800;
 }
 .hero__description {
   font-family: "Open Sans", sans-serif;
   font-weight: 500;
   font-size: 1.1rem;
-  color: #6b6d72;
+  color: var(--color-secondary);
   margin-inline-start: 2rem;
   margin-block-start: 1.5rem;
   line-height: 2rem;
@@ -126,7 +150,7 @@ body {
   margin-inline-start: 2em;
 }
 .about__title {
-  color: #446be8;
+  color: var(--color-primary);
   margin-block-start: 8rem;
   margin-inline-start: 2rem;
   font-family: "Open Sans", sans-serif;
@@ -135,7 +159,7 @@ body {
   text-align: center;
 }
 .about__description {
-  color: #707277;
+  color: var(--color-paragraph);
   font-size: 1.2rem;
   margin-block-start: 2rem;
   margin-inline-start: 2rem;
@@ -148,7 +172,7 @@ body {
   margin-inline-start: 2rem;
   font-size: 1.1rem;
   font-family: "Open Sans", sans-serif;
-  color: #707277;
+  color: var(--color-paragraph);
   margin-block-end: 2rem;
 }
 .about__grid-container {
@@ -169,14 +193,14 @@ body {
   display: inline-block;
   margin-inline-start: 1rem;
   font-family: "Roboto Mono", monospace;
-  color: #707277;
+  color: var(--color-paragraph);
   font-size: 1.1rem;
   font-weight: 400;
 }
 
 /* Projects that I made */
 .work__title {
-  color: #446be8;
+  color: var(--color-primary);
   margin-block-start: 8rem;
   font-family: "Open Sans", sans-serif;
   font-size: 1.6rem;
@@ -188,7 +212,7 @@ body {
   padding: 16px;
   margin-block-start: 3rem;
   margin-inline-start: 2rem;
-  background-color: #3d547c;
+  background-color: var(--card-bg);
   width: 70%;
   position: relative;
   transition: 0.6s;
@@ -227,7 +251,7 @@ body {
   position: absolute;
 }
 .work__card__linksvg path:hover {
-  stroke: #446be8;
+  stroke: var(--color-primary);
 }
 .work__card__file-icon {
   margin-block-start: 1rem;
@@ -248,7 +272,7 @@ body {
 }
 .contact__title {
   margin-block-start: 2em;
-  color: #446be8;
+  color: var(--color-primary);
   font-weight: 800;
   font-family: "Open Sans", sans-serif;
   font-size: 1.6rem;
@@ -258,7 +282,7 @@ body {
 .contact__description {
   text-align: center;
   font-family: "Open Sans", sans-serif;
-  color: #707277;
+  color: var(--color-paragraph);
   font-size: 1.2rem;
   margin-block-end: 4em;
   line-height: 2rem;
@@ -268,13 +292,13 @@ body {
   text-decoration: none;
   font-size: 1.1rem;
   font-family: "Roboto Mono", monospace;
-  color: #446be8;
-  border: 2px solid #446be8;
+  color: var(--color-primary);
+  border: 2px solid var(--color-primary);
   padding: 16px;
   border-radius: 0.2rem;
 }
 .contact__button:hover {
-  background-color: #446be8;
+  background-color: var(--color-primary);
   color: white;
   transition: all 300ms ease-in-out;
 }
@@ -306,13 +330,13 @@ body {
   font-family: "Roboto Mono", monospace;
   margin-block-start: 2rem;
   text-align: center;
-  color: #446be8;
+  color: var(--color-primary);
   font-weight: 500;
 }
 .footer__email {
   margin-inline-start: 5rem;
   font-family: "Roboto Mono", monospace;
-  color: #446be8;
+  color: var(--color-primary);
   transform: rotate(90deg);
   position: absolute;
   bottom: 0;
@@ -338,11 +362,11 @@ body {
 .social-icons--codepen path,
 .social-icons--github path,
 .social-icons--insta path {
-  stroke: #446be8;
+  stroke: var(--color-primary);
 }
 
 .social-icons--behance path {
-  fill: #446be8;
+  fill: var(--color-primary);
 }
 
 /* Browser Scrollbar Styling */
@@ -357,13 +381,24 @@ body {
   border-radius: 0.5rem;
 }
 
+::-moz-scrollbar {
+  width: 0.5rem;
+  border-radius: 0.5rem;
+  background-color: lavenderblush;
+}
+
+::-moz-scrollbar-thumb {
+  background-color: rgb(173, 173, 239);
+  border-radius: 0.5rem;
+}
+
 /* Sticky functionality */
 .sticky {
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 999;
-  background-color: white;
+  background-color: var(--sticky-background);
   opacity: 0.9;
   box-shadow: 1px 1px 5px -2px rgba(0, 0, 0, 0.75);
   transition: all 1s ease;
@@ -439,7 +474,7 @@ body {
     right: 0;
     height: 100vh;
     top: 8vh;
-    background-color: #fcfcfc;
+    background-color: var(--bg);
     display: flex;
     z-index: 1;
     flex-direction: column;
@@ -483,13 +518,13 @@ body {
   }
 
   .contact__description {
-    margin-inline-start: 2rem;
+    margin-inline: 2.5rem;
     text-align: left;
     font-size: 1.1rem;
   }
 
   .work__title,
-.contact__title {
+  .contact__title {
     white-space: nowrap;
   }
 
@@ -521,12 +556,12 @@ body {
   }
 
   .subtitle,
-.description,
-.about__description,
-.card__title,
-.about__description--sub,
-.contact__description,
-.social-icons p {
+  .description,
+  .about__description,
+  .card__title,
+  .about__description--sub,
+  .contact__description,
+  .social-icons p {
     color: #a7afc7;
   }
 
@@ -565,4 +600,9 @@ body {
 .toggle .line3 {
   transform: rotate(45deg) translate(-5px, -6px);
   width: 1.6875rem;
+}
+
+.active, .navbar__navlinks__navlink:hover{
+  text-decoration: underline;
+  color: white;
 }

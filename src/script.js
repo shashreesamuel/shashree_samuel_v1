@@ -65,23 +65,23 @@ function myFunction() {
 // Dark Mode
 
 // check for saved 'darkMode' in localStorage
-let darkMode = localStorage.getItem("navbar__darkMode");
+let darkMode = localStorage.getItem("darkMode");
 
 const darkModeToggle = document.querySelector("#dark-mode-toggle");
 
 const enableDarkMode = () => {
   // 1. Add the class to the body
-  document.body.classList.add("navbar__darkMode");
+  document.body.classList.add("darkMode");
   // 2. Update darkMode in localStorage
-  localStorage.setItem("navbar__darkMode", "enabled");
+  localStorage.setItem("darkMode", "enabled");
   console.log("Enabled");
 };
 
 const disableDarkMode = () => {
   // 1. Remove the class from the body
-  document.body.classList.remove("navbar__darkMode");
+  document.body.classList.remove("darkMode");
   // 2. Update darkMode in localStorage
-  localStorage.setItem("navbar__darkMode", null);
+  localStorage.setItem("darkMode", null);
   console.log("Disabled");
 };
 
@@ -94,7 +94,7 @@ if (darkMode === "enabled") {
 // When someone clicks the button
 darkModeToggle.addEventListener("click", () => {
   // get their darkMode setting
-  darkMode = localStorage.getItem("navbar__darkMode");
+  darkMode = localStorage.getItem("darkMode");
 
   // if it not current enabled, enable it
   if (darkMode !== "enabled") {
@@ -104,3 +104,11 @@ darkModeToggle.addEventListener("click", () => {
     disableDarkMode();
   }
 });
+
+for (var i = 0; i < navLinks.length; i++) {
+  navLinks[i].addEventListener("click", function () {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
