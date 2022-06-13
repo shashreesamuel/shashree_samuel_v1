@@ -1,7 +1,8 @@
+const navLinks = document.querySelectorAll(".navbar__navlinks__navitem");
+
 const navSlide = () => {
   const burger = document.querySelector(".burger");
   const nav = document.querySelector(".navbar__navlinks");
-  const navLinks = document.querySelectorAll(".navbar__navlinks__navitem");
   // Toggle nav
   burger.addEventListener("click", () => {
     nav.classList.toggle("nav-active");
@@ -18,20 +19,6 @@ const navSlide = () => {
     // Burger Animation
     burger.classList.toggle("toggle");
   });
-
-  navLinks.forEach((link, index) => {
-    link.addEventListener("click", () => {
-      removeActiveClass();
-
-      link.classList.add("active");
-    });
-  });
-
-  function removeActiveClass() {
-    navLinks.forEach((l) => {
-      l.classList.remove("active");
-    });
-  }
 };
 
 navSlide();
@@ -104,11 +91,3 @@ darkModeToggle.addEventListener("click", () => {
     disableDarkMode();
   }
 });
-
-for (var i = 0; i < navLinks.length; i++) {
-  navLinks[i].addEventListener("click", function () {
-    var current = document.getElementsByClassName("active");
-    current[0].className = current[0].className.replace(" active", "");
-    this.className += " active";
-  });
-}
