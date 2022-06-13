@@ -271,7 +271,7 @@ body {
   text-align: center;
 }
 .contact__title {
-  margin-block-start: 2em;
+  margin-block-start: 4em;
   color: var(--color-primary);
   font-weight: 800;
   font-family: "Open Sans", sans-serif;
@@ -627,4 +627,8 @@ body {
 
 .home-btn{
   margin-inline: 8em;
+}
+
+.work__title:nth-child(2){
+  margin-block-start: 12em;
 }
