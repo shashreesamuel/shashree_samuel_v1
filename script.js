@@ -3,7 +3,9 @@ const navLinks = document.querySelectorAll(".navbar__navlinks__navitem");
 const navSlide = () => {
   const burger = document.querySelector(".burger");
   const nav = document.querySelector(".navbar__navlinks");
-  // Toggle nav
+
+  //! Toggle nav
+
   burger.addEventListener("click", () => {
     nav.classList.toggle("nav-active");
     // Animate links
@@ -16,14 +18,20 @@ const navSlide = () => {
         }s`;
       }
     });
-    // Burger Animation
+
+
+    //!  Burger Animation
+
+
     burger.classList.toggle("toggle");
   });
 };
 
 navSlide();
 
+
 //! Active Link Onclick
+
 
 // When the user scrolls the page, execute myFunction
 
@@ -91,3 +99,21 @@ darkModeToggle.addEventListener("click", () => {
     disableDarkMode();
   }
 });
+
+
+
+// TODO Function to display the cards as none
+
+
+let readMore = document.querySelector('.read-more');
+let button = document.querySelector('.read_more_btn');
+
+button.addEventListener('click', () => {
+  readMore.classList.toggle('d-none');
+  console.log('Clicked')
+  button.innerHTML = 'Read More'
+
+  if(!readMore.classList.contains('d-none')){
+    button.innerHTML = 'Read Less'
+  }
+})

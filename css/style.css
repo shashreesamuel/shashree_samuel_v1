@@ -294,6 +294,7 @@ body {
   font-family: "Roboto Mono", monospace;
   color: var(--color-light);
   background-color: var(--color-primary);
+  transition: background-color 0.2s ease-in-out;
   padding: 16px;
   border: 2px solid var(--color-primary);
   border-radius: 0.2rem;
@@ -606,6 +607,7 @@ body {
 
 .active, .navbar__navlinks__navlink:hover{
   border-bottom: 4px solid var(--color-primary);
+  border-radius: .13em;
 }
 
 .title{
@@ -631,4 +633,8 @@ body {
 
 .work__title:nth-child(2){
   margin-block-start: 12em;
+}
+
+.d-none{
+  display: none;
 }
